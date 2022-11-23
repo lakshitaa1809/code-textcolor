@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Change the Text</title>
+  </head>
+  <body>
+    <div class="textchange">
+      <div class="input">
+        <input class="get" id="get" placeholder="Type something" />
+        <button id="red">red</button>
+        <button id="blue">blue</button>
+        <button id="green">green</button>
+      </div>
+    </div>
+    <script>
+      let inp = document.getElementById("get");
+      let change1 = document.getElementById("red");
+      let change2 = document.getElementById("blue");
+      let change3 = document.getElementById("green");
+      change1.addEventListener("click", red);
+      function red() {
+        inp.style.color = "red";
+      }
+      change2.addEventListener("click", blue);
+      function blue() {
+        inp.style.color = "blue";
+      }
+      change3.addEventListener("click", green);
+      function green() {
+        inp.style.color = "green";
+      }
+    </script>
+  </body>
+</html>
